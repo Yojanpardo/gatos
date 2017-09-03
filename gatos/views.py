@@ -19,8 +19,8 @@ def gato_segun_perro(request):
 	template = loader.get_template('gato-segun-perro.html')
 	title = 'aqui no hay gatos'
 	perrosPiensan = 'los gatos pueden ser amigos'
-	piensan ={
-		'title': title,
+	culo ={
+		'title':title,
 		'perrosPiensan':perrosPiensan
 	}
-	return HttpResponse(template.render(piensan, title))
+	return HttpResponse(template.render(culo, request))
